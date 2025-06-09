@@ -7,7 +7,7 @@ Introduction to the Health Informatics Centre (HIC)
 - We have expert teams in secure data management, governance, data engineering, research infrastructure, software, and business support
 - Part of the School of Medicine, University of Dundee
 
-![](hic-expertise.png)
+![](raw/hic-expertise.png)
 
 TODO: More HIC/UoD images
 
@@ -35,7 +35,7 @@ TODO: Image
 ## NO!
 There are many reasons not to
 
-[![](northern-trains-lost-propertry.png)](https://media.northernrailway.co.uk/news/the-hamster-the-wig-and-the-cupboard-northern-customers-report-more-than-32-600-items-of-lost-property)
+[![](raw/northern-trains-lost-propertry.png)](https://media.northernrailway.co.uk/news/the-hamster-the-wig-and-the-cupboard-northern-customers-report-more-than-32-600-items-of-lost-property)
 
 - So what can we do instead?
 
@@ -74,7 +74,7 @@ TODO: Image
 - provide a locked-down compute environment with access to the data but no ability to copy data out
 - or only allow access to data from a physical location monitored with CCTV
 
-![](safepodbath02.png)
+![](raw/safepodbath02.png)
 
 ---
 ## In the UK these are embodied in the "5 safes"
@@ -87,17 +87,17 @@ Safe
 
 and we can balance how restrictive each of these "safes" are to create a "Trusted Research Environment"
 
-![](5-safes-circle.png)
+![](raw/5-safes-circle.png)
 
 ---
 # Example TRE
 
 Virtual desktop environment (Windows or Linux), accessed via a web browser
 
-![](hic-tre-01.png)
-![](hic-tre-04.png)
-![](hic-tre-05.png)
-![](hic-tre-09.png)
+![](raw/hic-tre-01.png)
+![](raw/hic-tre-04.png)
+![](raw/hic-tre-05.png)
+![](raw/hic-tre-09.png)
 
 ---
 
@@ -114,7 +114,7 @@ TODO: Image
 ---
 ## Health is devolved to the 4 nations of the UK
 
-![](health-data-uk.png)
+![](raw/health-data-uk.png)
 
 
 ---
@@ -123,8 +123,8 @@ In the UK
 - Goldacre review
 - Sudlow review
 
-![](goldacre-title-page.png)
-![](sudlow-review-cover.png)
+![](raw/goldacre-title-page.png)
+![](raw/sudlow-review-cover.png)
 
 ---
 And across Europe
@@ -169,7 +169,7 @@ Public Involvement
 
 Version 1.0 Released Oct 2023
 
-![](uktre-swansea-2023.jpg)
+![](raw/uktre-swansea-2023.jpg)
 
 ---
 ## 4 pillars
@@ -181,7 +181,7 @@ Version 1.0 Released Oct 2023
 
 It's not as easy as securing your compute infrastructure!
 
-![](satre-pillars.drawio.svg)
+![](raw/satre-pillars.drawio.svg)
 
 ---
 # SATRE examples
@@ -195,7 +195,7 @@ EOSC-ENTRUST
 Commercial providers
 
 
-![](sshn-network.png)
+![](raw/sshn-network.png)
 TODO: More images
 
 ---
@@ -263,10 +263,10 @@ This is a very active area of development, but a few areas of investigation incl
 - ephemeral SLURM clusters in public cloud (SLURM nodes are ephemeral, never shared between users, storage always encrypted)
 
 Shared HPC
-![](hpc-shared.png)
+![](raw/hpc-shared.png)
 
 Multiple isolated HPC
-![](hpc-individual.png)
+![](raw/hpc-individual.png)
 
 ---
 ## A few starting points
