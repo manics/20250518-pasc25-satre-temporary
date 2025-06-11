@@ -41,6 +41,7 @@ style: |
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .columns {
@@ -225,27 +226,26 @@ TODO: Image
 ---
 ## We could impose virtual or physical barriers on what they can do
 - provide a locked-down compute environment with access to the data but no ability to copy data out
-![ centre](computers-no-connection.drawio.svg)
+![centre](raw/computers-no-connection.drawio.svg)
 - or only allow access to data from a physical location monitored with CCTV
 
 
 ![bg fit right:40%](raw/safepodbath02.png)
 
 ---
-## In the UK these are embodied in the "5 safes"
-Safe
-- data
-- outputs
-- people
-- projects
-- settings
+## In the UK these are embodied in the _"5 safes"_
 
-and we can balance how restrictive each of these "safes" are to create a "Trusted Research Environment"
+We can balance how restrictive each of these _"safes"_ are to create a _"Trusted Research Environment"_
 
 ![bg right fit](raw/5-safes-circle.png)
 
 ---
-# Example TRE
+# A researcher's view of a TRE
+
+![](raw/tre-researchers-view.png)
+
+---
+# An example TRE
 
 Virtual desktop environment (Windows or Linux), accessed via a web browser
 
@@ -394,25 +394,39 @@ _footer: https://satre-specification.readthedocs.io/en/stable/pillars/computing_
 -->
 
 ---
+<!--
+_footer: https://satre.uktre.org/en/evaluations/uod-hic/
+-->
 
-
-
-# SATRE examples
-...
+![bg fit](raw/satre-uod-evaluation-20231011-screenshot.png)
 
 ---
+<style scoped>
+  .center {
+    text-align: center;
+  }
+</style>
+
 ## Who's using SATRE?
+
+<div class="box">
+
+![w:300](raw/sshn-network.png)
+
+![w:300](raw/scwcsu-snsde-archi-model.png)
+
+![w:300](raw/eosc-entrust-blueprint.png)
+
+</div>
+
+<div class="center">and several commercial providers</div>
+
+<!--
 NHS SDE
-
 SSHN
-
 EOSC-ENTRUST
-
 Commercial providers
-
-
-![bg fit right:25%](raw/sshn-network.png)
-TODO: More images
+-->
 
 ---
 
@@ -454,7 +468,7 @@ TODO: Image
 
 _(replace "public" with "data owner" for other data types, e.g. commercial)_
 
-TODO: Image
+![bg right](raw/scotparliament-people.jpg)
 
 ---
 # What can we do?
