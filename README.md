@@ -509,7 +509,7 @@ Multiple isolated HPC
 
 ---
 ## A few starting points
-- [FRIDGE (Federated Research Infrastructure by Data Governance Extension)](https://dareuk.org.uk/how-we-work/ongoing-activities/dare-uk-early-adopters/fridge/): treating a subset of HPC nodes as a TRE, and identifying what prerequisites the HPC provider must support
+- ![float-right w:200](logo-fridge.png) [FRIDGE (Federated Research Infrastructure by Data Governance Extension)](https://dareuk.org.uk/how-we-work/ongoing-activities/dare-uk-early-adopters/fridge/): treating a subset of HPC nodes as a TRE, and identifying what prerequisites the HPC provider must support
 - Confidential computing: Zero-trust computing where even sysadmins can't access data
   - Trusted Execution Environments
   - Secure enclaves (AWS Nitro)
