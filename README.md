@@ -122,8 +122,6 @@ https://www.dundee.ac.uk/hic
 
 ![bg fit right:35%](hic-expertise.png)
 
-TODO: More HIC/UoD images
-
 <!--
 Part of the School of Medicine, University of Dundee
 
@@ -141,8 +139,6 @@ Mission Statement: "To Innovate and enable world-leading data science research s
 
 ---
 # What are TREs and why do we need them?
-
-TODO: Image
 
 <!--
 Example motivating case
@@ -179,7 +175,7 @@ Patients from Scottish Health Research Register and Biobank (SHARE)
 ## How can we give the research access to the data?
 - Can we give them a USB stick with all patient medical data to copy to their laptop?
 
-TODO: Image
+![bg right](usb-drive.jpg)
 
 ---
 ## NO! There are many reasons not to
