@@ -33,6 +33,10 @@ style: |
     margin: 0 auto;
   }
 
+  img[alt~="float-right"] {
+    float: right;
+  }
+
   .box {
     display: flex;
     flex-wrap: wrap;
@@ -104,20 +108,26 @@ _footer: ''
 ---
 # The Health Informatics Centre (HIC)
 
-<div class="columns">
-<div></div>
-<div></div>
-</div>
+The vision:
 
-- HIC supports high impact research through the collection and management of population based data
-- We have expert teams in secure data management, governance, data engineering, research infrastructure, software, and business support
-- Part of the School of Medicine, University of Dundee
+![float-right w:200](raw/hic-chicken-tony.jpg)
 
+> To advance data science and its community, simplifying access to sensitive data whilst maintaining security as a global leader in open, reproducible and scalable research platforms
+
+https://www.dundee.ac.uk/hic
 
 ![bg fit right:35%](raw/hic-expertise.png)
 
-
 TODO: More HIC/UoD images
+
+<!--
+Part of the School of Medicine, University of Dundee
+
+Mission Statement: "To Innovate and enable world-leading data science research specialising in sensitive data"
+
+- HIC supports high impact research through the collection and management of population based data
+- We have expert teams in secure data management, governance, data engineering, research infrastructure, software, and business support
+-->
 
 ---
 # Purpose of this talk
@@ -127,15 +137,45 @@ TODO: More HIC/UoD images
 
 ---
 # What are TREs and why do we need them?
-- Example motivating case
 
 TODO: Image
 
+<!--
+Example motivating case
+-->
+
 ---
-## A researcher wants to do some analysis with patient data
-- E.g. Electronics health records, medical images
-- How can a researcher access the required data?
-  - Can we give them a USB stick with all patient medical data to copy to their laptop?
+# Example: Can undiagnosed heart failure be detected from routine medical records?
+
+[![bg right:35% fit vertical Echocardiogram](raw/heart-failure-risk-detected-ai-pioneering-study.webp)](https://www.dundee.ac.uk/stories/heart-failure-risk-detected-ai-pioneering-study)
+
+<!-- Risk detected by AI in pioneering study -->
+
+_Artificial Intelligence has the capability to detect people living with the risk of experiencing heart failure, new University of Dundee research has discovered._
+
+https://www.dundee.ac.uk/stories/heart-failure-risk-detected-ai-pioneering-study
+
+<!--
+Heart failure: heart is unable to pump blood around the body effectively, gets worse over time
+-->
+
+---
+![bg fit](raw/ehrs-ecgs-heartdisease.excalidraw.svg)
+
+<!--
+Echocardiography heart scans from heart failure patients
+Electronic health records to identify heart failure patients with echocardiograms
+AI used to extract measurements of hearts from echocardiograms, better than usual methods
+Combined with test results from medical records
+
+Patients from Scottish Health Research Register and Biobank (SHARE)
+-->
+
+---
+
+---
+## How can we give the research acess to the data?
+- Can we give them a USB stick with all patient medical data to copy to their laptop?
 
 TODO: Image
 
@@ -161,7 +201,7 @@ _footer: https://securedatagroup.org/wp-content/uploads/2019/10/sdc-handbook-v1.
 
 ## ... and limit what they can publish
 
-![w:1800](sdc-maps.png)
+![h:500](raw/sdc-maps.png)
 
 <!--
 For example ensure only summary statistics can be published
@@ -231,7 +271,7 @@ Virtual desktop environment (Windows or Linux), accessed via a web browser
 
 In the UK 50+ TREs have organically developed over the past 15+ years.
 - Duplication of effort
-- Most TRE were developed independently, making them harder to maintain
+- Most TREs were developed independently, making them harder to maintain
 - Every TRE feels different to researchers, more time is wasted understanding how each TRE works
 - No single TRE has all the data you want
 
@@ -243,16 +283,13 @@ TODO: Image
 ![h:500 centre](raw/health-data-uk.png)
 
 ---
-## The need for a coordinated approach has has been emphasised through several reports
-In the UK
-- Goldacre review
-- Sudlow review
+## The need for a coordinated approach has has been emphasised through several reports in the UK ...
 
 ![bg fit right](raw/goldacre-title-page.png)
 ![bg fit right:60%](raw/sudlow-review-cover.png)
 
 ---
-And across Europe
+## ... and across Europe
 - [European Health Data Space Regulation (EHDS)](https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space-regulation-ehds_en
 )
   > a common framework for the use and exchange of electronic health data across the EU. It enhances individuals’ access to and control over their personal electronic health data, while also enabling certain data to be reused for public interest, policy support, and scientific research purposes.
@@ -264,15 +301,32 @@ TODO: Image
 
 TODO: Image
 
+
 ---
+<style scoped>
+  .columns div {
+    border: 1px solid black;
+    padding: 0.5em;
+  }
+</style>
+
 # SATRE: Standard Architecture for Trusted Research Environments
+### A guide on how to build and run a TRE
 
 <div class="columns">
+
 <div>
 
-A guide on how to build and run a TRE
-Four Architectural Principles
-- Usability, Maintaining Public Trust, Observability, Standardisation
+Four Architectural Principles:
+- Usability
+- Maintaining Public Trust
+- Observability
+- Standardisation
+
+</div>
+
+<div>
+
 Four Pillars
 - Information Governance
 - Computing Technology
@@ -280,15 +334,15 @@ Four Pillars
 - Supporting Capabilities
 
 </div>
-<div>
+</div>
 
+TODO: Image
+
+<!--
 29 Capabilities
 - 160 statements
   - 75 mandatory
-
-TODO: Image
-</div>
-</div>
+-->
 
 ---
 ## Built by the UK TRE community
@@ -310,26 +364,50 @@ Version 1.0 Released Oct 2023
 ![](raw/satre-pillars.drawio.svg)
 
 <!--
-It's not as easy as just securing your compute infrastructure
--->
----
-
-
-<!--
 1. Information governance
 2. Computing technology and Information Security
 3. Data management
 4. Supporting Capabilities
+
+It's not as easy as just securing your compute infrastructure
 -->
+
 ---
+<style scoped>
+  td {
+    font-size: 12pt;
+  }
+</style>
+
+## Example capability: Network Management
+
+|  | Statement | Guidance | Importance |
+|---|---|---|---|
+| 2.2.9. | Your TRE must control and manage all of its network infrastructure in order to protect information in systems and applications. | Network infrastructure must prevent unauthorised access to resources on the network. This may include firewalls, network segmentation, and restricting connections to the network. | Mandatory |
+| 2.2.10. | Your TRE must not allow connectivity between users in different projects, or with access to different datasets. | Connectivity between users in the same project may be allowed,  for example to support shared network services within the project. | Mandatory |
+| 2.2.11. | Your TRE must block outbound connections to the internet by default. | Limited outbound connectivity may be allowed for some services. | Mandatory |
+| 2.2.12. | You should be able to monitor the network configuration of your TRE to check for misconfigurations and vulnerabilities. | This may include regular vulnerability scanning, and penetration testing. | Recommended |
+| 2.2.13. | You should regularly monitor the network configuration of your TRE to check for misconfigurations and vulnerabilities. | This will involve following the monitoring procedure detailed above. | Recommended |
+
+<!--
+_footer: https://satre-specification.readthedocs.io/en/stable/pillars/computing_technology.html#network-management-application
+-->
+
+---
+
+
+
 # SATRE examples
 ...
 
 ---
 ## Who's using SATRE?
 NHS SDE
+
 SSHN
+
 EOSC-ENTRUST
+
 Commercial providers
 
 
@@ -396,7 +474,7 @@ HPC facilities are expensive:
   - (We definitely don't know yet)
 - What is the performance penalty (and does it matter?)
 
-![bg right](building-site.jpg)
+![bg right](raw/building-site.jpg)
 
 ---
 ## A few starting points
@@ -446,7 +524,7 @@ TODO: Images
 There are limits to how "secure" your compute is
 
 
-![Ken Thompson - Reflections on trusting trust](reflections_on_trusting_trust.png)
+![Ken Thompson - Reflections on trusting trust](raw/reflections_on_trusting_trust.png)
 https://doi.org/10.1145/358198.358210
 
 ---
