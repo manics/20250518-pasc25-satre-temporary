@@ -5,6 +5,9 @@ paginate: true
 # This requires html tags to be enabled
 # VSCode: markdown.marp.enableHtml
 
+# Build:
+# npx @marp-team/marp-cli@4.1.2 README.md -o index.html
+
 style: |
   section.overlaybg h1,
   section.overlaybg ul,
@@ -111,13 +114,13 @@ _footer: ''
 
 The vision:
 
-![float-right w:200](raw/hic-chicken-tony.jpg)
+![float-right w:200](hic-chicken-tony.jpg)
 
 > To advance data science and its community, simplifying access to sensitive data whilst maintaining security as a global leader in open, reproducible and scalable research platforms
 
 https://www.dundee.ac.uk/hic
 
-![bg fit right:35%](raw/hic-expertise.png)
+![bg fit right:35%](hic-expertise.png)
 
 TODO: More HIC/UoD images
 
@@ -148,7 +151,7 @@ Example motivating case
 ---
 # Example: Can undiagnosed heart failure be detected from routine medical records?
 
-[![bg right:35% fit vertical Echocardiogram](raw/heart-failure-risk-detected-ai-pioneering-study.webp)](https://www.dundee.ac.uk/stories/heart-failure-risk-detected-ai-pioneering-study)
+[![bg right:35% fit vertical Echocardiogram](heart-failure-risk-detected-ai-pioneering-study.webp)](https://www.dundee.ac.uk/stories/heart-failure-risk-detected-ai-pioneering-study)
 
 <!-- Risk detected by AI in pioneering study -->
 
@@ -161,7 +164,7 @@ Heart failure: heart is unable to pump blood around the body effectively, gets w
 -->
 
 ---
-![bg fit](raw/ehrs-ecgs-heartdisease.excalidraw.svg)
+![bg fit](ehrs-ecgs-heartdisease.excalidraw.svg)
 
 <!--
 Echocardiography heart scans from heart failure patients
@@ -173,9 +176,7 @@ Patients from Scottish Health Research Register and Biobank (SHARE)
 -->
 
 ---
-
----
-## How can we give the research acess to the data?
+## How can we give the research access to the data?
 - Can we give them a USB stick with all patient medical data to copy to their laptop?
 
 TODO: Image
@@ -183,7 +184,7 @@ TODO: Image
 ---
 ## NO! There are many reasons not to
 
-[![drop-shadow:0,5px,10px,rgba(0,0,0,.4) w:800 centre](raw/northern-trains-lost-propertry.png)](https://media.northernrailway.co.uk/news/the-hamster-the-wig-and-the-cupboard-northern-customers-report-more-than-32-600-items-of-lost-property)
+[![drop-shadow:0,5px,10px,rgba(0,0,0,.4) w:800 centre](northern-trains-lost-propertry.png)](https://media.northernrailway.co.uk/news/the-hamster-the-wig-and-the-cupboard-northern-customers-report-more-than-32-600-items-of-lost-property)
 
 - So what can we do instead?
 
@@ -202,7 +203,7 @@ _footer: https://securedatagroup.org/wp-content/uploads/2019/10/sdc-handbook-v1.
 
 ## ... and limit what they can publish
 
-![h:500](raw/sdc-maps.png)
+![h:500](sdc-maps.png)
 
 <!--
 For example ensure only summary statistics can be published
@@ -226,23 +227,23 @@ TODO: Image
 ---
 ## We could impose virtual or physical barriers on what they can do
 - provide a locked-down compute environment with access to the data but no ability to copy data out
-![centre](raw/computers-no-connection.drawio.svg)
+![centre](computers-no-connection.drawio.svg)
 - or only allow access to data from a physical location monitored with CCTV
 
 
-![bg fit right:40%](raw/safepodbath02.png)
+![bg fit right:40%](safepodbath02.png)
 
 ---
 ## In the UK these are embodied in the _"5 safes"_
 
 We can balance how restrictive each of these _"safes"_ are to create a _"Trusted Research Environment"_
 
-![bg right fit](raw/5-safes-circle.png)
+![bg right fit](5-safes-circle.png)
 
 ---
 # A researcher's view of a TRE
 
-![](raw/tre-researchers-view.png)
+![](tre-researchers-view.png)
 
 ---
 # An example TRE
@@ -251,19 +252,19 @@ Virtual desktop environment (Windows or Linux), accessed via a web browser
 
 ---
 
-![bg fit](raw/hic-tre-01.png)
+![bg fit](hic-tre-01.png)
 
 ---
 
-![bg fit](raw/hic-tre-04.png)
+![bg fit](hic-tre-04.png)
 
 ---
 
-![bg fit](raw/hic-tre-05.png)
+![bg fit](hic-tre-05.png)
 
 ---
 
-![bg fit](raw/hic-tre-09.png)
+![bg fit](hic-tre-09.png)
 
 ---
 
@@ -280,13 +281,13 @@ TODO: Image
 ---
 ## Health is devolved to the 4 nations of the UK
 
-![h:500 centre](raw/health-data-uk.png)
+![h:500 centre](health-data-uk.png)
 
 ---
 ## The need for a coordinated approach has has been emphasised through several reports in the UK ...
 
-![bg fit right](raw/goldacre-title-page.png)
-![bg fit right:60%](raw/sudlow-review-cover.png)
+![bg fit right](goldacre-title-page.png)
+![bg fit right:60%](sudlow-review-cover.png)
 
 ---
 ## ... and across Europe
@@ -356,12 +357,12 @@ Public Involvement
 
 Version 1.0 Released Oct 2023
 
-![bg right:40% fit](raw/uktre-swansea-2023.jpg)
+![bg right:40% fit](uktre-swansea-2023.jpg)
 
 ---
 ## 4 pillars
 
-![](raw/satre-pillars.drawio.svg)
+![](satre-pillars.drawio.svg)
 
 <!--
 1. Information governance
@@ -398,7 +399,7 @@ _footer: https://satre-specification.readthedocs.io/en/stable/pillars/computing_
 _footer: https://satre.uktre.org/en/evaluations/uod-hic/
 -->
 
-![bg fit](raw/satre-uod-evaluation-20231011-screenshot.png)
+![bg fit](satre-uod-evaluation-20231011-screenshot.png)
 
 ---
 <style scoped>
@@ -411,11 +412,11 @@ _footer: https://satre.uktre.org/en/evaluations/uod-hic/
 
 <div class="box">
 
-![w:300](raw/sshn-network.png)
+![w:300](sshn-network.png)
 
-![w:300](raw/scwcsu-snsde-archi-model.png)
+![w:300](scwcsu-snsde-archi-model.png)
 
-![w:300](raw/eosc-entrust-blueprint.png)
+![w:300](eosc-entrust-blueprint.png)
 
 </div>
 
@@ -440,7 +441,7 @@ SATRE is a common baseline for TRE, so now we can work on federation as part of
 # HPC: How is it used in TREs?
 It mostly isn't
 
-![bg fit right](raw/eo_circle_red_no-entry.svg)
+![bg fit right](eo_circle_red_no-entry.svg)
 
 <!--
 https://commons.wikimedia.org/wiki/File:Eo_circle_red_no-entry.svg
@@ -468,7 +469,7 @@ TODO: Image
 
 _(replace "public" with "data owner" for other data types, e.g. commercial)_
 
-![bg right](raw/scotparliament-people.jpg)
+![bg right](scotparliament-people.jpg)
 
 ---
 # What can we do?
@@ -488,7 +489,7 @@ HPC facilities are expensive:
   - (We definitely don't know yet)
 - What is the performance penalty (and does it matter?)
 
-![bg right](raw/building-site.jpg)
+![bg right](building-site.jpg)
 
 ---
 ## A few starting points
@@ -499,13 +500,13 @@ This is a very active area of development, but a few areas of investigation incl
 <div>
 
 Shared HPC
-![h:300 centre](raw/hpc-shared.png)
+![h:300 centre](hpc-shared.png)
 
 </div>
 <div>
 
 Multiple isolated HPC
-![h:300 centre](raw/hpc-individual.png)
+![h:300 centre](hpc-individual.png)
 
 </div>
 </div>
@@ -538,7 +539,7 @@ TODO: Images
 There are limits to how "secure" your compute is
 
 
-![Ken Thompson - Reflections on trusting trust](raw/reflections_on_trusting_trust.png)
+![Ken Thompson - Reflections on trusting trust](reflections_on_trusting_trust.png)
 https://doi.org/10.1145/358198.358210
 
 ---
