@@ -73,6 +73,8 @@ style: |
     right: 0;
     bottom: 0;
     text-align: left;
+    width: fit-content;
+    background-color: white;
   }
 
   div.footer-logos img {
@@ -81,22 +83,21 @@ style: |
   }
 
 footer: |
-  <div class="footer-logos"><img src="./hic-logo-h212-white.png"/></div>
+  <div class="footer-logos"><img src="hic-logo-h212-white.png"/></div>
 
 
 ---
 <!--
 _class: title
-_footer: ''
+_footer: |
+  <div class="footer-logos"><img src="hic-logo-h212-white.png"/><img src="universityofdundee-logo-2line.png"/></div>
+
 -->
 <style scoped>
-  h3 {
-    font-size: 30px;
-    width: 500px;
+  h2 {
+    display: inline-block;
+    width: 400px;
     margin-left: 500px;
-  }
-  h3 img {
-    vertical-align: middle;
   }
   div.footer-logos {
     height: 100px;
@@ -107,7 +108,10 @@ _footer: ''
 </style>
 
 # How Can a Standard Architecture for Trusted Research Environments Provide a Framework for HPC?
-### Simon Li
+## Simon Li
+## PASC25 18 June 2025
+
+![bg](dundee-taybridge-sun.jpg)
 
 ---
 # The Health Informatics Centre (HIC)
@@ -595,7 +599,7 @@ https://doi.org/10.1145/358198.358210
 
 ---
 <!--
-_footer: ''
+_footer: ""
 _paginate: false
 -->
 <style scoped>
