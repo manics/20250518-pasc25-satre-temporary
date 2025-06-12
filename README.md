@@ -132,6 +132,18 @@ Mission Statement: "To Innovate and enable world-leading data science research s
 -->
 
 ---
+## We provide access to national healthcare data for researchers
+
+- Including electronic health records and medical images
+- We're data curators/processors on behalf of data controllers
+- And are part of the Scottish Safe Haven network
+
+![height:200 float-right](bsi-iso27001.svg)
+
+![bg fit right](sshn-network.png)
+
+
+---
 # Purpose of this talk
 - Explain what Trusted Research Environments (TREs) are
 - Why existing HPC is not generally usable for TREs
@@ -160,7 +172,7 @@ Heart failure: heart is unable to pump blood around the body effectively, gets w
 -->
 
 ---
-![bg fit](ehrs-ecgs-heartdisease.excalidraw.svg)
+![bg fit](ehrs-ecgs-heartfailure.excalidraw.svg)
 
 <!--
 Echocardiography heart scans from heart failure patients
@@ -190,11 +202,11 @@ Patients from Scottish Health Research Register and Biobank (SHARE)
 - Pseudonymisation
 - Use "synthetic" data
 
-TODO: Image
+![bg fit right](excel-data-hidden.png)
 
 ---
 <!--
-_footer: https://securedatagroup.org/wp-content/uploads/2019/10/sdc-handbook-v1.0.pdf
+_footer: https://securedatagroup.org/wp-content/uploads/2025/03/sdc-handbook-v2.0.pdf
 -->
 
 ## ... and limit what they can publish
@@ -210,15 +222,13 @@ For example ensure only summary statistics can be published
 - understand why it's important to handle sensitive data in this way
 - ensure that researchers are "trusted" before they can access patient data
 
-TODO: Image
+[![width:800 float-right](mrc-research-gdpr-training.png)](https://bygsystems.net/mrcrsc-lms/course/index.php?categoryid=1)
 
 ---
 ## ... along with reviewing what they plan to do
 - Research projects in the healthcare field already go through ethics review
 - is the proposed work in the public interest?
 - does it include safeguards to protect patient data?
-
-TODO: Image
 
 ---
 ## We could impose virtual or physical barriers on what they can do
@@ -272,8 +282,6 @@ In the UK 50+ TREs have organically developed over the past 15+ years.
 - Every TRE feels different to researchers, more time is wasted understanding how each TRE works
 - No single TRE has all the data you want
 
-TODO: Image
-
 ---
 ## Health is devolved to the 4 nations of the UK
 
@@ -291,13 +299,20 @@ TODO: Image
 )
   > a common framework for the use and exchange of electronic health data across the EU. It enhances individuals’ access to and control over their personal electronic health data, while also enabling certain data to be reused for public interest, policy support, and scientific research purposes.
 
-TODO: Image
-
 ---
-## Federated data analysis is unavoidable
+<!--
+_footer: ""
+-->
+<style scoped>
+  h2 {
+    color: white;
+    padding-top: 500px;
+  }
+</style>
 
-TODO: Image
+## Standard Architecture for Trusted Research Environments
 
+![bg](satre_logo_dark.svg)
 
 ---
 <style scoped>
@@ -307,8 +322,7 @@ TODO: Image
   }
 </style>
 
-# SATRE: Standard Architecture for Trusted Research Environments
-### A guide on how to build and run a TRE
+## A guide on how to build and run a TRE
 
 <div class="columns">
 
@@ -332,8 +346,6 @@ Four Pillars
 
 </div>
 </div>
-
-TODO: Image
 
 <!--
 29 Capabilities
@@ -399,8 +411,13 @@ _footer: https://satre.uktre.org/en/evaluations/uod-hic/
 
 ---
 <style scoped>
-  .center {
+  .text-box {
     text-align: center;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em;
+    height: 3em;
   }
 </style>
 
@@ -408,15 +425,16 @@ _footer: https://satre.uktre.org/en/evaluations/uod-hic/
 
 <div class="box">
 
-![w:300](sshn-network.png)
+![w:300](nhs-research-scotland.png)
 
-![w:300](scwcsu-snsde-archi-model.png)
+![w:400](england-sde-logo.png)
 
-![w:300](eosc-entrust-blueprint.png)
+![w:500](eoscentrust-logo.svg)
+
+<div class="text-box">and several<br>commercial providers</div>
 
 </div>
 
-<div class="center">and several commercial providers</div>
 
 <!--
 NHS SDE
@@ -429,12 +447,22 @@ Commercial providers
 
 ## Not yet in SATRE: federation
 
-SATRE is a common baseline for TRE, so now we can work on federation as part of
-- DARE UK TREvolution (UK federated TREs)
-- EOSC ENTRUST (European federated TREs)
+SATRE is a common baseline for TRE, so now we can work on federation as part of:
+
+![w:500 centre](trevolution-logo-dark2-wide.svg)
+![w:500 centre](eoscentrust-logo.svg)
 
 ---
-# HPC: How is it used in TREs?
+# Why do TREs need HPC?
+
+Massive datasets, more complex analyses
+- The Scottish Safe Haven Network collectively has 2+ PB of medical images
+
+<!--
+-->
+
+---
+# How is HPC used in practice?
 It mostly isn't
 
 ![bg fit right](eo_circle_red_no-entry.svg)
@@ -449,48 +477,53 @@ https://commons.wikimedia.org/wiki/File:Eo_circle_red_no-entry.svg
 - Internal network connections: data can be passed between different internal projects
 - Scratch space: data could be seen by others, or left behind on a node after a job completes
 
-TODO: Image
+![bg right:40%](datacentre.jpg)
 
 ---
 ## HPC information governance
+- GDPR and other legislation applies
 - HPC administrators may not be trained in handling sensitive data
-- A typical TRE will be audited/accredited, e.g. to ISO27001. HPC facilities may not be
-- Is a TRE confident HPC administrators won't make mistakes in managing access?
+- A typical TRE will be audited/accredited, e.g. to ISO27001
+- Are data owners confident that HPC administrators won't make mistakes?
 
-TODO: Image
+![bg right:40%](gdpr_europe.jpg)
 
+<!--
+This is special category data
+
+https://commons.wikimedia.org/wiki/File:Gdpr_Europe.jpg
+-->
 ---
 # The ultimate question
-"Are the public happy with their sensitive data being analysed in shared HPC facilities?"
-
-_(replace "public" with "data owner" for other data types, e.g. commercial)_
+_Are the public (or data owner) happy with their sensitive data being analysed in shared HPC facilities?_
 
 ![bg right](scotparliament-people.jpg)
 
 ---
 # What can we do?
-Note: "we" includes "you"!
 
 - Build a shared understanding of how sensitive data differs from typical HPC datasets
 - Understand the drivers behind the additional restrictions that TREs impose
-- Think about what technical controls are practical in current and planned HPC facilities
+- Think about what technical controls are practical in current and planned HPC facilities using SATRE as a guide
 
-TODO: Image
+<!--
+Note: "we" includes "you"!
+-->
 
 ---
 ## New vs existing HPC
 HPC facilities are expensive:
 - Can new facilities include support for TREs? (Probably)
-- How much of this can be retro-fitted to existing facilities?
-  - (We definitely don't know yet)
-- What is the performance penalty (and does it matter?)
+- How much of this can be retro-fitted to existing facilities? (We definitely don't know yet)
+- What is the performance penalty? (Does it matter?)
 
 ![bg right](building-site.jpg)
 
 ---
 ## A few starting points
 This is a very active area of development, but a few areas of investigation include:
-- ephemeral SLURM clusters in public cloud (SLURM nodes are ephemeral, never shared between users, storage always encrypted)
+- ephemeral SLURM clusters in public cloud
+  - SLURM nodes are ephemeral, never shared between users, storage always encrypted
 
 <div class="columns">
 <div>
@@ -510,38 +543,103 @@ Multiple isolated HPC
 ---
 ## A few starting points
 - ![float-right w:200](logo-fridge.png) [FRIDGE (Federated Research Infrastructure by Data Governance Extension)](https://dareuk.org.uk/how-we-work/ongoing-activities/dare-uk-early-adopters/fridge/): treating a subset of HPC nodes as a TRE, and identifying what prerequisites the HPC provider must support
+  - multi-tenancy
+
+
+---
 - Confidential computing: Zero-trust computing where even sysadmins can't access data
   - Trusted Execution Environments
   - Secure enclaves (AWS Nitro)
   - AMD SEV (Secure Encrypted Virtualization)
-  - Intel Trust Domain Extensions (TDX))
+  - Intel Trust Domain Extensions (TDX)
 
-TODO: Images
-
----
-## NIST guidelines in progress
-
-NIST have a couple of published and draft docs on securing HPC:
-- [NIST SP 800-223](https://csrc.nist.gov/pubs/sp/800/223/final) High-Performance Computing Security: Architecture, Threat Analysis, and Security Posture
-  - https://doi.org/10.6028/NIST.SP.800-223
-- [NIST SP 800-234 Initial Public Draft](https://csrc.nist.gov/pubs/sp/800/234/ipd) High-Performance Computing (HPC) Security Overlay
-  - https://doi.org/10.6028/NIST.SP.800-234.ipd
-
-TODO: Images
+![centre height:150](confidential_computing_consortium.svg)
 
 ---
-## But don't forget, people are more important
+<style scoped>
+  .columns div {
+    border: 2px solid darkgrey;
+    padding: 1em;
+    width: 50%;
+  }
+</style>
 
-There are limits to how "secure" your compute is
+## NIST guidelines on secure HPC
 
+<div class="columns">
+
+<div>
+
+[NIST SP 800-223](https://csrc.nist.gov/pubs/sp/800/223/final)
+High-Performance Computing Security: Architecture, Threat Analysis, and Security Posture
+
+</div>
+
+<div>
+
+[NIST SP 800-234 Initial Public Draft](https://csrc.nist.gov/pubs/sp/800/234/ipd)
+High-Performance Computing (HPC) Security Overlay
+
+</div>
+</div>
+
+---
+## But there are limits to how secure your compute is
 
 ![Ken Thompson - Reflections on trusting trust](reflections_on_trusting_trust.png)
 https://doi.org/10.1145/358198.358210
 
----
-# Thanks to...
+<!--
 
-TODO: Images
+-->
+
+---
+<!--
+_footer: ''
+_paginate: false
+-->
+<style scoped>
+img {
+  padding: 5px 5px;
+  border-radius: 5px;
+  width: 100%;
+  background-color: white;
+  max-heightx: 100px;
+  max-width: 250px;
+}
+.xbox>* {
+  flex: 1 1;
+  margin: 0px 20px;
+}
+</style>
+
+![bg](./dundee-taybridge-sun.jpg)
+
+<div class="box">
+
+![Health Informatics Centre](hic-logo-h212-white.png)
+
+![University of Dundee](universityofdundee-logo-2line.png)
+
+![Alan turing Institute](alan_turing_institute_logo.svg)
+
+![University College London](university_college_london_logo.svg)
+
+![DARE UK](dare_uk_logo.svg)
+
+![Health Data Research UK](hdruk_main_rgb_jpeg.jpg)
+
+![Administrative Data Research UK](adruk_logo_print.png)
+
+![UK Research and Innovation](ukri_logo.png)
+
+![University College London](ulster_university.svg)
+
+![Research Data Scotland](research_data_scotland.svg)
+
+![STFC Hartree](stfchartree-logo.png)
+
+</div>
 
 ---
 # Links for more information
