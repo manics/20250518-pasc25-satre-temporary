@@ -319,6 +319,18 @@ _footer: ""
 ![bg](satre_logo_dark.svg)
 
 ---
+## A grassroots standard built by the UK TRE community
+Over 60 organisations contributed
+- 14 collaborative events
+
+Public Involvement
+- Workshops identified transparency as a key requirement
+
+Version 1.0 Released Oct 2023
+
+![bg right:40% fit](uktre-swansea-2023.jpg)
+
+---
 <style scoped>
   .columns div {
     border: 1px solid black;
@@ -326,7 +338,7 @@ _footer: ""
   }
 </style>
 
-## A guide on how to build and run a TRE
+## A high-level guide on how to build and run a TRE
 
 <div class="columns">
 
@@ -356,20 +368,6 @@ Four Pillars
 - 160 statements
   - 75 mandatory
 -->
-
----
-## Built by the UK TRE community
-~60 organisations engaged
-- 14 Collaboration Cafés
-- 25 contributors making direct changes to the content
-
-Public Involvement
-- Workshops identified transparency as a key requirement
-- Reflected in three (mandatory) statements
-
-Version 1.0 Released Oct 2023
-
-![bg right:40% fit](uktre-swansea-2023.jpg)
 
 ---
 ## 4 pillars
@@ -453,17 +451,14 @@ Commercial providers
 
 SATRE is a common baseline for TRE, so now we can work on federation as part of:
 
-![w:500 centre](trevolution-logo-dark2-wide.svg)
-![w:500 centre](eoscentrust-logo.svg)
+[![w:500 centre](trevolution-logo-dark2-wide.svg)](https://dareuk.org.uk/how-we-work/ongoing-activities/trevolution/)
+[![w:500 centre](eoscentrust-logo.svg)](https://eosc-entrust.eu/)
 
 ---
 # Why do TREs need HPC?
 
 Massive datasets, more complex analyses
 - The Scottish Safe Haven Network collectively has 2+ PB of medical images
-
-<!--
--->
 
 ---
 # How is HPC used in practice?
