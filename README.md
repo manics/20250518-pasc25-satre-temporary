@@ -188,7 +188,7 @@ Patients from Scottish Health Research Register and Biobank (SHARE)
 -->
 
 ---
-## How can we give the research access to the data?
+## How can we give researchers access to the data?
 - Can we give them a USB stick with all patient medical data to copy to their laptop?
 
 ![bg right](usb-drive.jpg)
