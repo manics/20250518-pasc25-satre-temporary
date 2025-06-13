@@ -604,16 +604,11 @@ _paginate: false
 -->
 <style scoped>
 img {
-  padding: 5px 5px;
-  border-radius: 5px;
+  padding: 10px;
+  border-radius: 10px;
   width: 100%;
   background-color: white;
-  max-heightx: 100px;
-  max-width: 250px;
-}
-.xbox>* {
-  flex: 1 1;
-  margin: 0px 20px;
+  width: 240px;
 }
 </style>
 
@@ -642,6 +637,8 @@ img {
 ![Research Data Scotland](research_data_scotland.svg)
 
 ![STFC Hartree](stfchartree-logo.png)
+
+![UK TRE](uktre-logo.svg)
 
 </div>
 
