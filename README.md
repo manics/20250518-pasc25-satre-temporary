@@ -646,5 +646,4 @@ img {
 - DARE UK TREvolution https://dareuk.org.uk/how-we-work/ongoing-activities/trevolution/
 - EOSC ENTRUST https://eosc-entrust.eu/
 
-
-TODO: Insert QRCode to online slides
+[![bg fit right:40%](qrcode.png)](https://www.manicstreetpreacher.co.uk/hic-presentations-public/20250618-pasc25-satre/)
