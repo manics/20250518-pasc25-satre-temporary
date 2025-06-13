@@ -246,14 +246,16 @@ For example ensure only summary statistics can be published
 ---
 ## In the UK these are embodied in the _"5 safes"_
 
-We can balance how restrictive each of these _"safes"_ are to create a _"Trusted Research Environment"_
+We can balance how restrictive each of these _"safes"_ are
 
 ![bg right fit](5-safes-circle.png)
 
+<!--
 ---
 # A researcher's view of a TRE
 
 ![](tre-researchers-view.png)
+-->
 
 ---
 # An example TRE
