@@ -7,6 +7,8 @@ paginate: true
 
 # Build:
 # npx @marp-team/marp-cli@4.1.2 README.md -o index.html
+# npx @marp-team/marp-cli@4.1.2 README.md -o index.pdf --pdf --allow-local-files
+# npx @marp-team/marp-cli@4.1.2 README.md -o index.pptx --pptx-editable --allow-local-files
 
 style: |
   section.overlaybg h1,
