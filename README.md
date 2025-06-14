@@ -93,7 +93,7 @@ footer: |
 _class: title
 _footer: |
   <div class="footer-logos"><img src="hic-logo-h212-white.png"/><img src="universityofdundee-logo-2line.png"/></div>
-
+_paginate: false
 -->
 <style scoped>
   h2 {
