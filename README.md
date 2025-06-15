@@ -476,9 +476,8 @@ https://commons.wikimedia.org/wiki/File:Eo_circle_red_no-entry.svg
 ---
 ## Typical HPC has insufficient isolation for handling sensitive data
 - Outbound network access: data can be copied out
-- Shared drives: people can see each other's data
+- Shared filesystems/scratch space: people can see each other's data
 - Internal network connections: data can be passed between different internal projects
-- Scratch space: data could be seen by others, or left behind on a node after a job completes
 
 ![bg right:40%](datacentre.jpg)
 
@@ -487,7 +486,6 @@ https://commons.wikimedia.org/wiki/File:Eo_circle_red_no-entry.svg
 - GDPR and other legislation applies
 - HPC administrators may not be trained in handling sensitive data
 - A typical TRE will be audited/accredited, e.g. to ISO27001
-- Are data owners confident that HPC administrators won't make mistakes?
 
 ![bg right:40%](gdpr_europe.jpg)
 
@@ -505,22 +503,16 @@ _Are the public (or data owner) happy with their sensitive data being analysed i
 ---
 # What can we do?
 
-- Build a shared understanding of how sensitive data differs from typical HPC datasets
 - Understand the drivers behind the additional restrictions that TREs impose
 - Think about what technical controls are practical in current and planned HPC facilities using SATRE as a guide
+  - Can new facilities include support for TREs?
+  - How much can be retro-fitted to existing facilities?
+
+![bg right:40%](building-site.jpg)
 
 <!--
 Note: "we" includes "you"!
 -->
-
----
-## New vs existing HPC
-HPC facilities are expensive:
-- Can new facilities include support for TREs? (Probably)
-- How much of this can be retro-fitted to existing facilities? (We definitely don't know yet)
-- What is the performance penalty? (Does it matter?)
-
-![bg right](building-site.jpg)
 
 ---
 ## A few starting points
@@ -544,8 +536,7 @@ Multiple isolated HPC
 </div>
 
 ---
-## A few starting points
-- ![float-right w:200](logo-fridge.png) [FRIDGE (Federated Research Infrastructure by Data Governance Extension)](https://dareuk.org.uk/how-we-work/ongoing-activities/dare-uk-early-adopters/fridge/): treating a subset of HPC nodes as a TRE, and identifying what prerequisites the HPC provider must support
+![float-right w:200](logo-fridge.png) [FRIDGE (Federated Research Infrastructure by Data Governance Extension)](https://dareuk.org.uk/how-we-work/ongoing-activities/dare-uk-early-adopters/fridge/): treating a subset of HPC nodes as a TRE, and identifying what prerequisites the HPC provider must support
   - multi-tenancy
 
 
