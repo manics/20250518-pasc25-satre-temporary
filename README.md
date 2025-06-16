@@ -395,9 +395,11 @@ It's not as easy as just securing your compute infrastructure
   td {
     font-size: 12pt;
     background-color: white;
-  }
-  tr:not(:nth-child(3)) td {
     color: lightgrey;
+  }
+  tr:nth-child(3) td {
+    color: inherit;
+    font-weight: bold;
   }
 </style>
 
@@ -587,12 +589,7 @@ High-Performance Computing (HPC) Security Overlay
 ---
 ## But there are limits to how secure your compute is
 
-![Ken Thompson - Reflections on trusting trust](reflections_on_trusting_trust.png)
-https://doi.org/10.1145/358198.358210
-
-<!--
-
--->
+[![Ken Thompson - Reflections on trusting trust](reflections_on_trusting_trust.png)](https://doi.org/10.1145/358198.358210)
 
 ---
 <!--
