@@ -634,9 +634,14 @@ img {
 
 ---
 # Links for more information
+
 - SATRE specification https://satre-specification.readthedocs.io/
 - Public evaluations https://satre.uktre.org/
 - DARE UK TREvolution https://dareuk.org.uk/how-we-work/ongoing-activities/trevolution/
 - EOSC ENTRUST https://eosc-entrust.eu/
 
-[![bg fit right:40%](qrcode.png)](https://www.manicstreetpreacher.co.uk/hic-presentations-public/20250618-pasc25-satre/)
+![bg fit right:40%](qrcode-url.png)
+
+<!--
+https://www.manicstreetpreacher.co.uk/hic-presentations-public/20250618-pasc25-satre/)
+-->
