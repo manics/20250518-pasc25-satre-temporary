@@ -504,7 +504,7 @@ _Are the public (or data owner) happy with their sensitive data being analysed i
 # What can we do?
 
 - Understand the drivers behind the additional restrictions that TREs impose
-- Think about what technical controls are practical in current and planned HPC facilities using SATRE as a guide
+- Think about what technical controls are practical using SATRE as a guide
   - Can new facilities include support for TREs?
   - How much can be retro-fitted to existing facilities?
 
