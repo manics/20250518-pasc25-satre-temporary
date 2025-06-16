@@ -7,8 +7,8 @@ paginate: true
 
 # Build:
 # npx @marp-team/marp-cli@4.1.2 README.md -o index.html
-# npx @marp-team/marp-cli@4.1.2 README.md -o index.pdf --pdf --allow-local-files
-# npx @marp-team/marp-cli@4.1.2 README.md -o index.pptx --pptx-editable --allow-local-files
+# npx @marp-team/marp-cli@4.1.2 README.md -o 20250618-pasc25-satre.pdf --pdf --allow-local-files
+# npx @marp-team/marp-cli@4.1.2 README.md -o 20250618-pasc25-satre.pptx --pptx-editable --allow-local-files
 
 style: |
   section.overlaybg h1,
@@ -316,9 +316,12 @@ _footer: ""
     color: white;
     padding-top: 500px;
   }
+  h2 a {
+    color: white
+  }
 </style>
 
-## Standard Architecture for Trusted Research Environments
+## Standard Architecture for Trusted Research Environments<br/>https://satre-specification.readthedocs.io
 
 ![bg](satre_logo_dark.svg)
 
@@ -391,6 +394,10 @@ It's not as easy as just securing your compute infrastructure
 <style scoped>
   td {
     font-size: 12pt;
+    background-color: white;
+  }
+  tr:not(:nth-child(3)) td {
+    color: lightgrey;
   }
 </style>
 
